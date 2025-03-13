@@ -1,0 +1,14 @@
+{
+  "name": "Node.js Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:latest",
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  },
+  "postCreateCommand": "npm install"
+}
